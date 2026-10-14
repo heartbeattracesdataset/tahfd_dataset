@@ -1,0 +1,1613 @@
+{
+  "generator": "TAHFD Synthetic Trace Generator v2",
+  "grounded_in": "PlanetLab heartbeat traces (Sens et al., 2024)",
+  "dataset_url": "https://gitlab.lip6.fr/psens/latency-trace-planetlab/",
+  "parameters": {
+    "base_time_ms": 10000000000,
+    "heartbeat_interval_ms": 100,
+    "duration_hours": 72.0,
+    "duration_ms": 259200000,
+    "rng_seed": 42,
+    "k_overlap": 3,
+    "stddev_classes": [
+      {
+        "class": "A",
+        "min_ms": 1.3,
+        "max_ms": 4.0,
+        "weight": 0.31
+      },
+      {
+        "class": "B",
+        "min_ms": 4.0,
+        "max_ms": 8.0,
+        "weight": 0.22
+      },
+      {
+        "class": "C",
+        "min_ms": 8.0,
+        "max_ms": 16.0,
+        "weight": 0.24
+      },
+      {
+        "class": "D",
+        "min_ms": 16.0,
+        "max_ms": 25.0,
+        "weight": 0.12
+      },
+      {
+        "class": "E",
+        "min_ms": 25.0,
+        "max_ms": 57.0,
+        "weight": 0.11
+      }
+    ],
+    "loss_rate_range": {
+      "min": 0.0004,
+      "max": 0.0028
+    },
+    "burst_model": {
+      "entry_probability": 0.002,
+      "duration_mean_ms": 5000,
+      "duration_std_ms": 3000,
+      "burst_loss_rate": 0.15
+    }
+  },
+  "topology": {
+    "n_nodes": 50,
+    "root": 5,
+    "parents": [
+      20,
+      25,
+      27,
+      39,
+      45,
+      47,
+      49
+    ],
+    "children": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      46,
+      48
+    ],
+    "parent_children_map": {
+      "20": [
+        0,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15,
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        37,
+        38,
+        40,
+        46,
+        48
+      ],
+      "25": [
+        0,
+        1,
+        7,
+        8,
+        9,
+        14,
+        15,
+        16,
+        22,
+        23,
+        24,
+        31,
+        32,
+        33,
+        38,
+        40,
+        41,
+        48
+      ],
+      "27": [
+        0,
+        1,
+        2,
+        8,
+        9,
+        10,
+        15,
+        16,
+        17,
+        23,
+        24,
+        26,
+        32,
+        33,
+        34,
+        40,
+        41,
+        42
+      ],
+      "39": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        24,
+        26,
+        28,
+        33,
+        34,
+        35,
+        41,
+        42,
+        43
+      ],
+      "45": [
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19,
+        26,
+        28,
+        29,
+        34,
+        35,
+        36,
+        42,
+        43,
+        44
+      ],
+      "47": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        13,
+        18,
+        19,
+        21,
+        28,
+        29,
+        30,
+        35,
+        36,
+        37,
+        43,
+        44,
+        46
+      ],
+      "49": [
+        4,
+        6,
+        7,
+        12,
+        13,
+        14,
+        19,
+        21,
+        22,
+        29,
+        30,
+        31,
+        36,
+        37,
+        38,
+        44,
+        46,
+        48
+      ]
+    },
+    "node_roles": {
+      "5": "root",
+      "20": "parent",
+      "25": "parent",
+      "27": "parent",
+      "39": "parent",
+      "45": "parent",
+      "47": "parent",
+      "49": "parent",
+      "0": "child",
+      "1": "child",
+      "2": "child",
+      "3": "child",
+      "4": "child",
+      "6": "child",
+      "7": "child",
+      "8": "child",
+      "9": "child",
+      "10": "child",
+      "11": "child",
+      "12": "child",
+      "13": "child",
+      "14": "child",
+      "15": "child",
+      "16": "child",
+      "17": "child",
+      "18": "child",
+      "19": "child",
+      "21": "child",
+      "22": "child",
+      "23": "child",
+      "24": "child",
+      "26": "child",
+      "28": "child",
+      "29": "child",
+      "30": "child",
+      "31": "child",
+      "32": "child",
+      "33": "child",
+      "34": "child",
+      "35": "child",
+      "36": "child",
+      "37": "child",
+      "38": "child",
+      "40": "child",
+      "41": "child",
+      "42": "child",
+      "43": "child",
+      "44": "child",
+      "46": "child",
+      "48": "child"
+    }
+  },
+  "link_properties": {
+    "0->20": {
+      "sender": 0,
+      "receiver": 20,
+      "stddev_ms": 2.5844,
+      "stddev_class": "A",
+      "loss_rate": 0.000622,
+      "base_delay_ms": 102.12,
+      "delay_jitter_ms": 20.42
+    },
+    "6->20": {
+      "sender": 6,
+      "receiver": 20,
+      "stddev_ms": 7.3307,
+      "stddev_class": "B",
+      "loss_rate": 0.001563,
+      "base_delay_ms": 50.29,
+      "delay_jitter_ms": 10.06
+    },
+    "7->20": {
+      "sender": 7,
+      "receiver": 20,
+      "stddev_ms": 23.2429,
+      "stddev_class": "D",
+      "loss_rate": 0.00085,
+      "base_delay_ms": 46.81,
+      "delay_jitter_ms": 9.36
+    },
+    "8->20": {
+      "sender": 8,
+      "receiver": 20,
+      "stddev_ms": 9.118,
+      "stddev_class": "C",
+      "loss_rate": 0.00059,
+      "base_delay_ms": 6.07,
+      "delay_jitter_ms": 1.21
+    },
+    "13->20": {
+      "sender": 13,
+      "receiver": 20,
+      "stddev_ms": 21.9837,
+      "stddev_class": "D",
+      "loss_rate": 0.001578,
+      "base_delay_ms": 118.21,
+      "delay_jitter_ms": 23.64
+    },
+    "14->20": {
+      "sender": 14,
+      "receiver": 20,
+      "stddev_ms": 6.275,
+      "stddev_class": "B",
+      "loss_rate": 0.000525,
+      "base_delay_ms": 21.61,
+      "delay_jitter_ms": 4.32
+    },
+    "15->20": {
+      "sender": 15,
+      "receiver": 20,
+      "stddev_ms": 11.7688,
+      "stddev_class": "C",
+      "loss_rate": 0.001202,
+      "base_delay_ms": 115.92,
+      "delay_jitter_ms": 23.18
+    },
+    "21->20": {
+      "sender": 21,
+      "receiver": 20,
+      "stddev_ms": 12.4286,
+      "stddev_class": "C",
+      "loss_rate": 0.001188,
+      "base_delay_ms": 49.07,
+      "delay_jitter_ms": 9.81
+    },
+    "22->20": {
+      "sender": 22,
+      "receiver": 20,
+      "stddev_ms": 2.4791,
+      "stddev_class": "A",
+      "loss_rate": 0.000607,
+      "base_delay_ms": 64.24,
+      "delay_jitter_ms": 12.85
+    },
+    "23->20": {
+      "sender": 23,
+      "receiver": 20,
+      "stddev_ms": 18.1055,
+      "stddev_class": "D",
+      "loss_rate": 0.000448,
+      "base_delay_ms": 45.8,
+      "delay_jitter_ms": 9.16
+    },
+    "30->20": {
+      "sender": 30,
+      "receiver": 20,
+      "stddev_ms": 3.0872,
+      "stddev_class": "A",
+      "loss_rate": 0.001183,
+      "base_delay_ms": 118.67,
+      "delay_jitter_ms": 23.73
+    },
+    "31->20": {
+      "sender": 31,
+      "receiver": 20,
+      "stddev_ms": 11.2511,
+      "stddev_class": "C",
+      "loss_rate": 0.00195,
+      "base_delay_ms": 29.21,
+      "delay_jitter_ms": 5.84
+    },
+    "32->20": {
+      "sender": 32,
+      "receiver": 20,
+      "stddev_ms": 1.5431,
+      "stddev_class": "A",
+      "loss_rate": 0.001631,
+      "base_delay_ms": 71.97,
+      "delay_jitter_ms": 14.39
+    },
+    "37->20": {
+      "sender": 37,
+      "receiver": 20,
+      "stddev_ms": 2.6528,
+      "stddev_class": "A",
+      "loss_rate": 0.000538,
+      "base_delay_ms": 105.97,
+      "delay_jitter_ms": 21.19
+    },
+    "38->20": {
+      "sender": 38,
+      "receiver": 20,
+      "stddev_ms": 5.5241,
+      "stddev_class": "B",
+      "loss_rate": 0.000719,
+      "base_delay_ms": 96.39,
+      "delay_jitter_ms": 19.28
+    },
+    "40->20": {
+      "sender": 40,
+      "receiver": 20,
+      "stddev_ms": 4.3506,
+      "stddev_class": "B",
+      "loss_rate": 0.000503,
+      "base_delay_ms": 144.48,
+      "delay_jitter_ms": 28.9
+    },
+    "46->20": {
+      "sender": 46,
+      "receiver": 20,
+      "stddev_ms": 47.3906,
+      "stddev_class": "E",
+      "loss_rate": 0.000671,
+      "base_delay_ms": 145.53,
+      "delay_jitter_ms": 29.11
+    },
+    "48->20": {
+      "sender": 48,
+      "receiver": 20,
+      "stddev_ms": 22.452,
+      "stddev_class": "D",
+      "loss_rate": 0.000959,
+      "base_delay_ms": 44.48,
+      "delay_jitter_ms": 8.9
+    },
+    "0->25": {
+      "sender": 0,
+      "receiver": 25,
+      "stddev_ms": 3.737,
+      "stddev_class": "A",
+      "loss_rate": 0.000971,
+      "base_delay_ms": 34.34,
+      "delay_jitter_ms": 6.87
+    },
+    "1->25": {
+      "sender": 1,
+      "receiver": 25,
+      "stddev_ms": 2.8639,
+      "stddev_class": "A",
+      "loss_rate": 0.000564,
+      "base_delay_ms": 129.21,
+      "delay_jitter_ms": 25.84
+    },
+    "7->25": {
+      "sender": 7,
+      "receiver": 25,
+      "stddev_ms": 13.7557,
+      "stddev_class": "C",
+      "loss_rate": 0.000927,
+      "base_delay_ms": 95.96,
+      "delay_jitter_ms": 19.19
+    },
+    "8->25": {
+      "sender": 8,
+      "receiver": 25,
+      "stddev_ms": 13.1988,
+      "stddev_class": "C",
+      "loss_rate": 0.000471,
+      "base_delay_ms": 65.29,
+      "delay_jitter_ms": 13.06
+    },
+    "9->25": {
+      "sender": 9,
+      "receiver": 25,
+      "stddev_ms": 2.6338,
+      "stddev_class": "A",
+      "loss_rate": 0.00076,
+      "base_delay_ms": 25.96,
+      "delay_jitter_ms": 5.19
+    },
+    "14->25": {
+      "sender": 14,
+      "receiver": 25,
+      "stddev_ms": 2.8866,
+      "stddev_class": "A",
+      "loss_rate": 0.000557,
+      "base_delay_ms": 139.14,
+      "delay_jitter_ms": 27.83
+    },
+    "15->25": {
+      "sender": 15,
+      "receiver": 25,
+      "stddev_ms": 10.775,
+      "stddev_class": "C",
+      "loss_rate": 0.001263,
+      "base_delay_ms": 8.31,
+      "delay_jitter_ms": 1.66
+    },
+    "16->25": {
+      "sender": 16,
+      "receiver": 25,
+      "stddev_ms": 40.4337,
+      "stddev_class": "E",
+      "loss_rate": 0.001835,
+      "base_delay_ms": 17.0,
+      "delay_jitter_ms": 3.4
+    },
+    "22->25": {
+      "sender": 22,
+      "receiver": 25,
+      "stddev_ms": 5.9628,
+      "stddev_class": "B",
+      "loss_rate": 0.002481,
+      "base_delay_ms": 87.9,
+      "delay_jitter_ms": 17.58
+    },
+    "23->25": {
+      "sender": 23,
+      "receiver": 25,
+      "stddev_ms": 5.0679,
+      "stddev_class": "B",
+      "loss_rate": 0.000763,
+      "base_delay_ms": 80.5,
+      "delay_jitter_ms": 16.1
+    },
+    "24->25": {
+      "sender": 24,
+      "receiver": 25,
+      "stddev_ms": 4.0864,
+      "stddev_class": "B",
+      "loss_rate": 0.001997,
+      "base_delay_ms": 134.94,
+      "delay_jitter_ms": 26.99
+    },
+    "31->25": {
+      "sender": 31,
+      "receiver": 25,
+      "stddev_ms": 2.7959,
+      "stddev_class": "A",
+      "loss_rate": 0.000494,
+      "base_delay_ms": 102.47,
+      "delay_jitter_ms": 20.49
+    },
+    "32->25": {
+      "sender": 32,
+      "receiver": 25,
+      "stddev_ms": 3.0804,
+      "stddev_class": "A",
+      "loss_rate": 0.001646,
+      "base_delay_ms": 116.45,
+      "delay_jitter_ms": 23.29
+    },
+    "33->25": {
+      "sender": 33,
+      "receiver": 25,
+      "stddev_ms": 3.7732,
+      "stddev_class": "A",
+      "loss_rate": 0.000626,
+      "base_delay_ms": 10.42,
+      "delay_jitter_ms": 2.08
+    },
+    "38->25": {
+      "sender": 38,
+      "receiver": 25,
+      "stddev_ms": 10.9674,
+      "stddev_class": "C",
+      "loss_rate": 0.002011,
+      "base_delay_ms": 122.2,
+      "delay_jitter_ms": 24.44
+    },
+    "40->25": {
+      "sender": 40,
+      "receiver": 25,
+      "stddev_ms": 7.8116,
+      "stddev_class": "B",
+      "loss_rate": 0.000705,
+      "base_delay_ms": 79.68,
+      "delay_jitter_ms": 15.94
+    },
+    "41->25": {
+      "sender": 41,
+      "receiver": 25,
+      "stddev_ms": 3.8273,
+      "stddev_class": "A",
+      "loss_rate": 0.000551,
+      "base_delay_ms": 11.51,
+      "delay_jitter_ms": 2.3
+    },
+    "48->25": {
+      "sender": 48,
+      "receiver": 25,
+      "stddev_ms": 7.9695,
+      "stddev_class": "B",
+      "loss_rate": 0.002268,
+      "base_delay_ms": 113.55,
+      "delay_jitter_ms": 22.71
+    },
+    "0->27": {
+      "sender": 0,
+      "receiver": 27,
+      "stddev_ms": 53.5903,
+      "stddev_class": "E",
+      "loss_rate": 0.001098,
+      "base_delay_ms": 50.81,
+      "delay_jitter_ms": 10.16
+    },
+    "1->27": {
+      "sender": 1,
+      "receiver": 27,
+      "stddev_ms": 21.955,
+      "stddev_class": "D",
+      "loss_rate": 0.000828,
+      "base_delay_ms": 18.7,
+      "delay_jitter_ms": 3.74
+    },
+    "2->27": {
+      "sender": 2,
+      "receiver": 27,
+      "stddev_ms": 10.0997,
+      "stddev_class": "C",
+      "loss_rate": 0.002476,
+      "base_delay_ms": 39.94,
+      "delay_jitter_ms": 7.99
+    },
+    "8->27": {
+      "sender": 8,
+      "receiver": 27,
+      "stddev_ms": 3.544,
+      "stddev_class": "A",
+      "loss_rate": 0.000539,
+      "base_delay_ms": 30.99,
+      "delay_jitter_ms": 6.2
+    },
+    "9->27": {
+      "sender": 9,
+      "receiver": 27,
+      "stddev_ms": 14.9965,
+      "stddev_class": "C",
+      "loss_rate": 0.000586,
+      "base_delay_ms": 50.0,
+      "delay_jitter_ms": 10.0
+    },
+    "10->27": {
+      "sender": 10,
+      "receiver": 27,
+      "stddev_ms": 24.7464,
+      "stddev_class": "D",
+      "loss_rate": 0.00106,
+      "base_delay_ms": 25.87,
+      "delay_jitter_ms": 5.17
+    },
+    "15->27": {
+      "sender": 15,
+      "receiver": 27,
+      "stddev_ms": 1.9201,
+      "stddev_class": "A",
+      "loss_rate": 0.000517,
+      "base_delay_ms": 103.26,
+      "delay_jitter_ms": 20.65
+    },
+    "16->27": {
+      "sender": 16,
+      "receiver": 27,
+      "stddev_ms": 2.6671,
+      "stddev_class": "A",
+      "loss_rate": 0.001544,
+      "base_delay_ms": 89.26,
+      "delay_jitter_ms": 17.85
+    },
+    "17->27": {
+      "sender": 17,
+      "receiver": 27,
+      "stddev_ms": 3.4711,
+      "stddev_class": "A",
+      "loss_rate": 0.001609,
+      "base_delay_ms": 112.15,
+      "delay_jitter_ms": 22.43
+    },
+    "23->27": {
+      "sender": 23,
+      "receiver": 27,
+      "stddev_ms": 1.6341,
+      "stddev_class": "A",
+      "loss_rate": 0.002432,
+      "base_delay_ms": 62.65,
+      "delay_jitter_ms": 12.53
+    },
+    "24->27": {
+      "sender": 24,
+      "receiver": 27,
+      "stddev_ms": 2.6192,
+      "stddev_class": "A",
+      "loss_rate": 0.001453,
+      "base_delay_ms": 143.57,
+      "delay_jitter_ms": 28.71
+    },
+    "26->27": {
+      "sender": 26,
+      "receiver": 27,
+      "stddev_ms": 3.797,
+      "stddev_class": "A",
+      "loss_rate": 0.00042,
+      "base_delay_ms": 85.5,
+      "delay_jitter_ms": 17.1
+    },
+    "32->27": {
+      "sender": 32,
+      "receiver": 27,
+      "stddev_ms": 8.8472,
+      "stddev_class": "C",
+      "loss_rate": 0.000526,
+      "base_delay_ms": 65.77,
+      "delay_jitter_ms": 13.15
+    },
+    "33->27": {
+      "sender": 33,
+      "receiver": 27,
+      "stddev_ms": 44.0734,
+      "stddev_class": "E",
+      "loss_rate": 0.002458,
+      "base_delay_ms": 121.63,
+      "delay_jitter_ms": 24.33
+    },
+    "34->27": {
+      "sender": 34,
+      "receiver": 27,
+      "stddev_ms": 7.1391,
+      "stddev_class": "B",
+      "loss_rate": 0.000414,
+      "base_delay_ms": 20.83,
+      "delay_jitter_ms": 4.17
+    },
+    "40->27": {
+      "sender": 40,
+      "receiver": 27,
+      "stddev_ms": 23.1714,
+      "stddev_class": "D",
+      "loss_rate": 0.000629,
+      "base_delay_ms": 81.96,
+      "delay_jitter_ms": 16.39
+    },
+    "41->27": {
+      "sender": 41,
+      "receiver": 27,
+      "stddev_ms": 14.9419,
+      "stddev_class": "C",
+      "loss_rate": 0.001293,
+      "base_delay_ms": 64.82,
+      "delay_jitter_ms": 12.96
+    },
+    "42->27": {
+      "sender": 42,
+      "receiver": 27,
+      "stddev_ms": 5.7035,
+      "stddev_class": "B",
+      "loss_rate": 0.001422,
+      "base_delay_ms": 130.79,
+      "delay_jitter_ms": 26.16
+    },
+    "1->39": {
+      "sender": 1,
+      "receiver": 39,
+      "stddev_ms": 4.9914,
+      "stddev_class": "B",
+      "loss_rate": 0.000634,
+      "base_delay_ms": 113.17,
+      "delay_jitter_ms": 22.63
+    },
+    "2->39": {
+      "sender": 2,
+      "receiver": 39,
+      "stddev_ms": 16.9475,
+      "stddev_class": "D",
+      "loss_rate": 0.000455,
+      "base_delay_ms": 91.19,
+      "delay_jitter_ms": 18.24
+    },
+    "3->39": {
+      "sender": 3,
+      "receiver": 39,
+      "stddev_ms": 3.5266,
+      "stddev_class": "A",
+      "loss_rate": 0.000732,
+      "base_delay_ms": 25.86,
+      "delay_jitter_ms": 5.17
+    },
+    "9->39": {
+      "sender": 9,
+      "receiver": 39,
+      "stddev_ms": 30.297,
+      "stddev_class": "E",
+      "loss_rate": 0.000696,
+      "base_delay_ms": 27.27,
+      "delay_jitter_ms": 5.45
+    },
+    "10->39": {
+      "sender": 10,
+      "receiver": 39,
+      "stddev_ms": 1.3571,
+      "stddev_class": "A",
+      "loss_rate": 0.000446,
+      "base_delay_ms": 30.32,
+      "delay_jitter_ms": 6.06
+    },
+    "11->39": {
+      "sender": 11,
+      "receiver": 39,
+      "stddev_ms": 2.8961,
+      "stddev_class": "A",
+      "loss_rate": 0.001504,
+      "base_delay_ms": 62.08,
+      "delay_jitter_ms": 12.42
+    },
+    "16->39": {
+      "sender": 16,
+      "receiver": 39,
+      "stddev_ms": 6.0181,
+      "stddev_class": "B",
+      "loss_rate": 0.002195,
+      "base_delay_ms": 128.41,
+      "delay_jitter_ms": 25.68
+    },
+    "17->39": {
+      "sender": 17,
+      "receiver": 39,
+      "stddev_ms": 1.79,
+      "stddev_class": "A",
+      "loss_rate": 0.000634,
+      "base_delay_ms": 41.16,
+      "delay_jitter_ms": 8.23
+    },
+    "18->39": {
+      "sender": 18,
+      "receiver": 39,
+      "stddev_ms": 11.3301,
+      "stddev_class": "C",
+      "loss_rate": 0.00044,
+      "base_delay_ms": 59.17,
+      "delay_jitter_ms": 11.83
+    },
+    "24->39": {
+      "sender": 24,
+      "receiver": 39,
+      "stddev_ms": 4.4067,
+      "stddev_class": "B",
+      "loss_rate": 0.002025,
+      "base_delay_ms": 12.53,
+      "delay_jitter_ms": 2.51
+    },
+    "26->39": {
+      "sender": 26,
+      "receiver": 39,
+      "stddev_ms": 28.1716,
+      "stddev_class": "E",
+      "loss_rate": 0.002065,
+      "base_delay_ms": 135.88,
+      "delay_jitter_ms": 27.18
+    },
+    "28->39": {
+      "sender": 28,
+      "receiver": 39,
+      "stddev_ms": 50.6648,
+      "stddev_class": "E",
+      "loss_rate": 0.001823,
+      "base_delay_ms": 98.16,
+      "delay_jitter_ms": 19.63
+    },
+    "33->39": {
+      "sender": 33,
+      "receiver": 39,
+      "stddev_ms": 17.211,
+      "stddev_class": "D",
+      "loss_rate": 0.001135,
+      "base_delay_ms": 79.56,
+      "delay_jitter_ms": 15.91
+    },
+    "34->39": {
+      "sender": 34,
+      "receiver": 39,
+      "stddev_ms": 20.1652,
+      "stddev_class": "D",
+      "loss_rate": 0.000846,
+      "base_delay_ms": 97.74,
+      "delay_jitter_ms": 19.55
+    },
+    "35->39": {
+      "sender": 35,
+      "receiver": 39,
+      "stddev_ms": 1.6774,
+      "stddev_class": "A",
+      "loss_rate": 0.001014,
+      "base_delay_ms": 65.45,
+      "delay_jitter_ms": 13.09
+    },
+    "41->39": {
+      "sender": 41,
+      "receiver": 39,
+      "stddev_ms": 2.2923,
+      "stddev_class": "A",
+      "loss_rate": 0.000816,
+      "base_delay_ms": 52.49,
+      "delay_jitter_ms": 10.5
+    },
+    "42->39": {
+      "sender": 42,
+      "receiver": 39,
+      "stddev_ms": 6.743,
+      "stddev_class": "B",
+      "loss_rate": 0.000713,
+      "base_delay_ms": 142.58,
+      "delay_jitter_ms": 28.52
+    },
+    "43->39": {
+      "sender": 43,
+      "receiver": 39,
+      "stddev_ms": 40.3891,
+      "stddev_class": "E",
+      "loss_rate": 0.000758,
+      "base_delay_ms": 82.64,
+      "delay_jitter_ms": 16.53
+    },
+    "2->45": {
+      "sender": 2,
+      "receiver": 45,
+      "stddev_ms": 21.8733,
+      "stddev_class": "D",
+      "loss_rate": 0.001914,
+      "base_delay_ms": 82.24,
+      "delay_jitter_ms": 16.45
+    },
+    "3->45": {
+      "sender": 3,
+      "receiver": 45,
+      "stddev_ms": 10.3052,
+      "stddev_class": "C",
+      "loss_rate": 0.001672,
+      "base_delay_ms": 34.35,
+      "delay_jitter_ms": 6.87
+    },
+    "4->45": {
+      "sender": 4,
+      "receiver": 45,
+      "stddev_ms": 14.8858,
+      "stddev_class": "C",
+      "loss_rate": 0.000517,
+      "base_delay_ms": 94.09,
+      "delay_jitter_ms": 18.82
+    },
+    "10->45": {
+      "sender": 10,
+      "receiver": 45,
+      "stddev_ms": 3.2594,
+      "stddev_class": "A",
+      "loss_rate": 0.000471,
+      "base_delay_ms": 140.71,
+      "delay_jitter_ms": 28.14
+    },
+    "11->45": {
+      "sender": 11,
+      "receiver": 45,
+      "stddev_ms": 3.889,
+      "stddev_class": "A",
+      "loss_rate": 0.001901,
+      "base_delay_ms": 91.08,
+      "delay_jitter_ms": 18.22
+    },
+    "12->45": {
+      "sender": 12,
+      "receiver": 45,
+      "stddev_ms": 23.156,
+      "stddev_class": "D",
+      "loss_rate": 0.002521,
+      "base_delay_ms": 41.74,
+      "delay_jitter_ms": 8.35
+    },
+    "17->45": {
+      "sender": 17,
+      "receiver": 45,
+      "stddev_ms": 8.7604,
+      "stddev_class": "C",
+      "loss_rate": 0.001327,
+      "base_delay_ms": 29.84,
+      "delay_jitter_ms": 5.97
+    },
+    "18->45": {
+      "sender": 18,
+      "receiver": 45,
+      "stddev_ms": 12.5794,
+      "stddev_class": "C",
+      "loss_rate": 0.000991,
+      "base_delay_ms": 80.78,
+      "delay_jitter_ms": 16.16
+    },
+    "19->45": {
+      "sender": 19,
+      "receiver": 45,
+      "stddev_ms": 14.394,
+      "stddev_class": "C",
+      "loss_rate": 0.001042,
+      "base_delay_ms": 91.94,
+      "delay_jitter_ms": 18.39
+    },
+    "26->45": {
+      "sender": 26,
+      "receiver": 45,
+      "stddev_ms": 28.8315,
+      "stddev_class": "E",
+      "loss_rate": 0.000502,
+      "base_delay_ms": 17.72,
+      "delay_jitter_ms": 3.54
+    },
+    "28->45": {
+      "sender": 28,
+      "receiver": 45,
+      "stddev_ms": 11.3489,
+      "stddev_class": "C",
+      "loss_rate": 0.001805,
+      "base_delay_ms": 102.33,
+      "delay_jitter_ms": 20.47
+    },
+    "29->45": {
+      "sender": 29,
+      "receiver": 45,
+      "stddev_ms": 7.5935,
+      "stddev_class": "B",
+      "loss_rate": 0.001764,
+      "base_delay_ms": 44.23,
+      "delay_jitter_ms": 8.85
+    },
+    "34->45": {
+      "sender": 34,
+      "receiver": 45,
+      "stddev_ms": 5.2578,
+      "stddev_class": "B",
+      "loss_rate": 0.000544,
+      "base_delay_ms": 26.43,
+      "delay_jitter_ms": 5.29
+    },
+    "35->45": {
+      "sender": 35,
+      "receiver": 45,
+      "stddev_ms": 39.0129,
+      "stddev_class": "E",
+      "loss_rate": 0.000843,
+      "base_delay_ms": 110.8,
+      "delay_jitter_ms": 22.16
+    },
+    "36->45": {
+      "sender": 36,
+      "receiver": 45,
+      "stddev_ms": 15.4891,
+      "stddev_class": "C",
+      "loss_rate": 0.001826,
+      "base_delay_ms": 74.51,
+      "delay_jitter_ms": 14.9
+    },
+    "42->45": {
+      "sender": 42,
+      "receiver": 45,
+      "stddev_ms": 7.9465,
+      "stddev_class": "B",
+      "loss_rate": 0.001617,
+      "base_delay_ms": 142.92,
+      "delay_jitter_ms": 28.58
+    },
+    "43->45": {
+      "sender": 43,
+      "receiver": 45,
+      "stddev_ms": 3.5964,
+      "stddev_class": "A",
+      "loss_rate": 0.001382,
+      "base_delay_ms": 22.68,
+      "delay_jitter_ms": 4.54
+    },
+    "44->45": {
+      "sender": 44,
+      "receiver": 45,
+      "stddev_ms": 13.4888,
+      "stddev_class": "C",
+      "loss_rate": 0.00041,
+      "base_delay_ms": 70.88,
+      "delay_jitter_ms": 14.18
+    },
+    "3->47": {
+      "sender": 3,
+      "receiver": 47,
+      "stddev_ms": 18.6582,
+      "stddev_class": "D",
+      "loss_rate": 0.000976,
+      "base_delay_ms": 69.14,
+      "delay_jitter_ms": 13.83
+    },
+    "4->47": {
+      "sender": 4,
+      "receiver": 47,
+      "stddev_ms": 3.7798,
+      "stddev_class": "A",
+      "loss_rate": 0.001829,
+      "base_delay_ms": 21.04,
+      "delay_jitter_ms": 4.21
+    },
+    "6->47": {
+      "sender": 6,
+      "receiver": 47,
+      "stddev_ms": 53.1344,
+      "stddev_class": "E",
+      "loss_rate": 0.000695,
+      "base_delay_ms": 126.35,
+      "delay_jitter_ms": 25.27
+    },
+    "11->47": {
+      "sender": 11,
+      "receiver": 47,
+      "stddev_ms": 3.9976,
+      "stddev_class": "A",
+      "loss_rate": 0.001461,
+      "base_delay_ms": 99.27,
+      "delay_jitter_ms": 19.85
+    },
+    "12->47": {
+      "sender": 12,
+      "receiver": 47,
+      "stddev_ms": 3.722,
+      "stddev_class": "A",
+      "loss_rate": 0.000423,
+      "base_delay_ms": 39.92,
+      "delay_jitter_ms": 7.98
+    },
+    "13->47": {
+      "sender": 13,
+      "receiver": 47,
+      "stddev_ms": 3.3973,
+      "stddev_class": "A",
+      "loss_rate": 0.000588,
+      "base_delay_ms": 137.04,
+      "delay_jitter_ms": 27.41
+    },
+    "18->47": {
+      "sender": 18,
+      "receiver": 47,
+      "stddev_ms": 8.2893,
+      "stddev_class": "C",
+      "loss_rate": 0.000404,
+      "base_delay_ms": 12.49,
+      "delay_jitter_ms": 2.5
+    },
+    "19->47": {
+      "sender": 19,
+      "receiver": 47,
+      "stddev_ms": 14.4119,
+      "stddev_class": "C",
+      "loss_rate": 0.000636,
+      "base_delay_ms": 128.16,
+      "delay_jitter_ms": 25.63
+    },
+    "21->47": {
+      "sender": 21,
+      "receiver": 47,
+      "stddev_ms": 3.4626,
+      "stddev_class": "A",
+      "loss_rate": 0.002433,
+      "base_delay_ms": 116.96,
+      "delay_jitter_ms": 23.39
+    },
+    "28->47": {
+      "sender": 28,
+      "receiver": 47,
+      "stddev_ms": 14.7038,
+      "stddev_class": "C",
+      "loss_rate": 0.000433,
+      "base_delay_ms": 34.26,
+      "delay_jitter_ms": 6.85
+    },
+    "29->47": {
+      "sender": 29,
+      "receiver": 47,
+      "stddev_ms": 2.6622,
+      "stddev_class": "A",
+      "loss_rate": 0.001705,
+      "base_delay_ms": 96.35,
+      "delay_jitter_ms": 19.27
+    },
+    "30->47": {
+      "sender": 30,
+      "receiver": 47,
+      "stddev_ms": 17.3969,
+      "stddev_class": "D",
+      "loss_rate": 0.001671,
+      "base_delay_ms": 32.99,
+      "delay_jitter_ms": 6.6
+    },
+    "35->47": {
+      "sender": 35,
+      "receiver": 47,
+      "stddev_ms": 3.2167,
+      "stddev_class": "A",
+      "loss_rate": 0.002694,
+      "base_delay_ms": 93.67,
+      "delay_jitter_ms": 18.73
+    },
+    "36->47": {
+      "sender": 36,
+      "receiver": 47,
+      "stddev_ms": 2.964,
+      "stddev_class": "A",
+      "loss_rate": 0.000434,
+      "base_delay_ms": 133.2,
+      "delay_jitter_ms": 26.64
+    },
+    "37->47": {
+      "sender": 37,
+      "receiver": 47,
+      "stddev_ms": 9.385,
+      "stddev_class": "C",
+      "loss_rate": 0.000478,
+      "base_delay_ms": 31.61,
+      "delay_jitter_ms": 6.32
+    },
+    "43->47": {
+      "sender": 43,
+      "receiver": 47,
+      "stddev_ms": 39.6739,
+      "stddev_class": "E",
+      "loss_rate": 0.001839,
+      "base_delay_ms": 97.28,
+      "delay_jitter_ms": 19.46
+    },
+    "44->47": {
+      "sender": 44,
+      "receiver": 47,
+      "stddev_ms": 9.161,
+      "stddev_class": "C",
+      "loss_rate": 0.002521,
+      "base_delay_ms": 48.69,
+      "delay_jitter_ms": 9.74
+    },
+    "46->47": {
+      "sender": 46,
+      "receiver": 47,
+      "stddev_ms": 13.5982,
+      "stddev_class": "C",
+      "loss_rate": 0.001415,
+      "base_delay_ms": 141.39,
+      "delay_jitter_ms": 28.28
+    },
+    "4->49": {
+      "sender": 4,
+      "receiver": 49,
+      "stddev_ms": 2.6726,
+      "stddev_class": "A",
+      "loss_rate": 0.000878,
+      "base_delay_ms": 73.75,
+      "delay_jitter_ms": 14.75
+    },
+    "6->49": {
+      "sender": 6,
+      "receiver": 49,
+      "stddev_ms": 1.6621,
+      "stddev_class": "A",
+      "loss_rate": 0.000687,
+      "base_delay_ms": 49.18,
+      "delay_jitter_ms": 9.84
+    },
+    "7->49": {
+      "sender": 7,
+      "receiver": 49,
+      "stddev_ms": 6.444,
+      "stddev_class": "B",
+      "loss_rate": 0.001375,
+      "base_delay_ms": 64.71,
+      "delay_jitter_ms": 12.94
+    },
+    "12->49": {
+      "sender": 12,
+      "receiver": 49,
+      "stddev_ms": 4.8705,
+      "stddev_class": "B",
+      "loss_rate": 0.001257,
+      "base_delay_ms": 50.97,
+      "delay_jitter_ms": 10.19
+    },
+    "13->49": {
+      "sender": 13,
+      "receiver": 49,
+      "stddev_ms": 2.4297,
+      "stddev_class": "A",
+      "loss_rate": 0.001006,
+      "base_delay_ms": 37.71,
+      "delay_jitter_ms": 7.54
+    },
+    "14->49": {
+      "sender": 14,
+      "receiver": 49,
+      "stddev_ms": 12.5262,
+      "stddev_class": "C",
+      "loss_rate": 0.001568,
+      "base_delay_ms": 98.95,
+      "delay_jitter_ms": 19.79
+    },
+    "19->49": {
+      "sender": 19,
+      "receiver": 49,
+      "stddev_ms": 10.5297,
+      "stddev_class": "C",
+      "loss_rate": 0.001851,
+      "base_delay_ms": 84.63,
+      "delay_jitter_ms": 16.93
+    },
+    "21->49": {
+      "sender": 21,
+      "receiver": 49,
+      "stddev_ms": 6.504,
+      "stddev_class": "B",
+      "loss_rate": 0.000807,
+      "base_delay_ms": 79.35,
+      "delay_jitter_ms": 15.87
+    },
+    "22->49": {
+      "sender": 22,
+      "receiver": 49,
+      "stddev_ms": 15.0912,
+      "stddev_class": "C",
+      "loss_rate": 0.002401,
+      "base_delay_ms": 78.03,
+      "delay_jitter_ms": 15.61
+    },
+    "29->49": {
+      "sender": 29,
+      "receiver": 49,
+      "stddev_ms": 7.1995,
+      "stddev_class": "B",
+      "loss_rate": 0.000738,
+      "base_delay_ms": 126.42,
+      "delay_jitter_ms": 25.28
+    },
+    "30->49": {
+      "sender": 30,
+      "receiver": 49,
+      "stddev_ms": 4.4634,
+      "stddev_class": "B",
+      "loss_rate": 0.00046,
+      "base_delay_ms": 127.09,
+      "delay_jitter_ms": 25.42
+    },
+    "31->49": {
+      "sender": 31,
+      "receiver": 49,
+      "stddev_ms": 2.0577,
+      "stddev_class": "A",
+      "loss_rate": 0.000766,
+      "base_delay_ms": 30.08,
+      "delay_jitter_ms": 6.02
+    },
+    "36->49": {
+      "sender": 36,
+      "receiver": 49,
+      "stddev_ms": 6.9708,
+      "stddev_class": "B",
+      "loss_rate": 0.000412,
+      "base_delay_ms": 124.94,
+      "delay_jitter_ms": 24.99
+    },
+    "37->49": {
+      "sender": 37,
+      "receiver": 49,
+      "stddev_ms": 19.3504,
+      "stddev_class": "D",
+      "loss_rate": 0.000539,
+      "base_delay_ms": 92.12,
+      "delay_jitter_ms": 18.42
+    },
+    "38->49": {
+      "sender": 38,
+      "receiver": 49,
+      "stddev_ms": 2.2853,
+      "stddev_class": "A",
+      "loss_rate": 0.002582,
+      "base_delay_ms": 149.34,
+      "delay_jitter_ms": 29.87
+    },
+    "44->49": {
+      "sender": 44,
+      "receiver": 49,
+      "stddev_ms": 18.7987,
+      "stddev_class": "D",
+      "loss_rate": 0.001525,
+      "base_delay_ms": 107.28,
+      "delay_jitter_ms": 21.46
+    },
+    "46->49": {
+      "sender": 46,
+      "receiver": 49,
+      "stddev_ms": 6.5636,
+      "stddev_class": "B",
+      "loss_rate": 0.000408,
+      "base_delay_ms": 35.31,
+      "delay_jitter_ms": 7.06
+    },
+    "48->49": {
+      "sender": 48,
+      "receiver": 49,
+      "stddev_ms": 4.655,
+      "stddev_class": "B",
+      "loss_rate": 0.000552,
+      "base_delay_ms": 126.26,
+      "delay_jitter_ms": 25.25
+    },
+    "20->5": {
+      "sender": 20,
+      "receiver": 5,
+      "stddev_ms": 42.791,
+      "stddev_class": "E",
+      "loss_rate": 0.002047,
+      "base_delay_ms": 148.6,
+      "delay_jitter_ms": 29.72
+    },
+    "25->5": {
+      "sender": 25,
+      "receiver": 5,
+      "stddev_ms": 2.5103,
+      "stddev_class": "A",
+      "loss_rate": 0.000859,
+      "base_delay_ms": 16.61,
+      "delay_jitter_ms": 3.32
+    },
+    "27->5": {
+      "sender": 27,
+      "receiver": 5,
+      "stddev_ms": 11.4702,
+      "stddev_class": "C",
+      "loss_rate": 0.000997,
+      "base_delay_ms": 26.85,
+      "delay_jitter_ms": 5.37
+    },
+    "39->5": {
+      "sender": 39,
+      "receiver": 5,
+      "stddev_ms": 3.7492,
+      "stddev_class": "A",
+      "loss_rate": 0.000436,
+      "base_delay_ms": 38.76,
+      "delay_jitter_ms": 7.75
+    },
+    "45->5": {
+      "sender": 45,
+      "receiver": 5,
+      "stddev_ms": 2.6235,
+      "stddev_class": "A",
+      "loss_rate": 0.001252,
+      "base_delay_ms": 76.53,
+      "delay_jitter_ms": 15.31
+    },
+    "47->5": {
+      "sender": 47,
+      "receiver": 5,
+      "stddev_ms": 1.9579,
+      "stddev_class": "A",
+      "loss_rate": 0.002065,
+      "base_delay_ms": 97.45,
+      "delay_jitter_ms": 19.49
+    },
+    "49->5": {
+      "sender": 49,
+      "receiver": 5,
+      "stddev_ms": 13.3616,
+      "stddev_class": "C",
+      "loss_rate": 0.001765,
+      "base_delay_ms": 13.43,
+      "delay_jitter_ms": 2.69
+    }
+  },
+  "fault_schedule": [
+    {
+      "type": "crash",
+      "node_id": 7,
+      "start_time_ms": 172800000,
+      "end_time_ms": null,
+      "affected_links": "all",
+      "description": "Node 7 permanently crashes at hour 48"
+    },
+    {
+      "type": "crash_recovery",
+      "node_id": 40,
+      "start_time_ms": 72000000,
+      "end_time_ms": 73800000,
+      "affected_links": "all",
+      "description": "Node 40 crashes at hour 20, recovers at hour 20.5"
+    },
+    {
+      "type": "crash_recovery",
+      "node_id": 29,
+      "start_time_ms": 198000000,
+      "end_time_ms": 198298800,
+      "affected_links": "all",
+      "description": "Node 29 crashes at hour 55, recovers after 5 minutes"
+    },
+    {
+      "type": "timing",
+      "node_id": 38,
+      "start_time_ms": 36000000,
+      "end_time_ms": 43200000,
+      "affected_links": [
+        [
+          38,
+          20
+        ]
+      ],
+      "extra_delay_ms": 150,
+      "description": "Node 38 delayed heartbeats to parent 20 during hours 10-12"
+    },
+    {
+      "type": "timing",
+      "node_id": 44,
+      "start_time_ms": 126000000,
+      "end_time_ms": 129600000,
+      "affected_links": [
+        [
+          44,
+          45
+        ]
+      ],
+      "extra_delay_ms": 200,
+      "description": "Node 44 delayed heartbeats to parent 45 during hours 35-36"
+    },
+    {
+      "type": "omission",
+      "node_id": 22,
+      "start_time_ms": 54000000,
+      "end_time_ms": 64800000,
+      "affected_links": [
+        [
+          22,
+          20
+        ]
+      ],
+      "drop_rate": 0.15,
+      "description": "Node 22 drops 15% heartbeats to parent 20 during hours 15-18"
+    },
+    {
+      "type": "omission",
+      "node_id": 43,
+      "start_time_ms": 151200000,
+      "end_time_ms": 158400000,
+      "affected_links": [
+        [
+          43,
+          39
+        ]
+      ],
+      "drop_rate": 0.3,
+      "description": "Node 43 drops 30% heartbeats to parent 39 during hours 42-44"
+    },
+    {
+      "type": "link",
+      "node_id": 31,
+      "start_time_ms": 90000000,
+      "end_time_ms": 91800000,
+      "affected_links": [
+        [
+          31,
+          20
+        ]
+      ],
+      "description": "Link 31->20 fails during hours 25-25.5"
+    },
+    {
+      "type": "link",
+      "node_id": 14,
+      "start_time_ms": 216000000,
+      "end_time_ms": 219600000,
+      "affected_links": [
+        [
+          14,
+          20
+        ]
+      ],
+      "description": "Link 14->20 fails during hours 60-61"
+    }
+  ]
+}
