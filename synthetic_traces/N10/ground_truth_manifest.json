@@ -1,0 +1,369 @@
+{
+  "generator": "TAHFD Synthetic Trace Generator v2",
+  "grounded_in": "PlanetLab heartbeat traces (Sens et al., 2024)",
+  "dataset_url": "https://gitlab.lip6.fr/psens/latency-trace-planetlab/",
+  "parameters": {
+    "base_time_ms": 10000000000,
+    "heartbeat_interval_ms": 100,
+    "duration_hours": 72.0,
+    "duration_ms": 259200000,
+    "rng_seed": 42,
+    "k_overlap": 3,
+    "stddev_classes": [
+      {
+        "class": "A",
+        "min_ms": 1.3,
+        "max_ms": 4.0,
+        "weight": 0.31
+      },
+      {
+        "class": "B",
+        "min_ms": 4.0,
+        "max_ms": 8.0,
+        "weight": 0.22
+      },
+      {
+        "class": "C",
+        "min_ms": 8.0,
+        "max_ms": 16.0,
+        "weight": 0.24
+      },
+      {
+        "class": "D",
+        "min_ms": 16.0,
+        "max_ms": 25.0,
+        "weight": 0.12
+      },
+      {
+        "class": "E",
+        "min_ms": 25.0,
+        "max_ms": 57.0,
+        "weight": 0.11
+      }
+    ],
+    "loss_rate_range": {
+      "min": 0.0004,
+      "max": 0.0028
+    },
+    "burst_model": {
+      "entry_probability": 0.002,
+      "duration_mean_ms": 5000,
+      "duration_std_ms": 3000,
+      "burst_loss_rate": 0.15
+    }
+  },
+  "topology": {
+    "n_nodes": 10,
+    "root": 5,
+    "parents": [
+      0,
+      6,
+      7
+    ],
+    "children": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "parent_children_map": {
+      "0": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "7": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ]
+    },
+    "node_roles": {
+      "5": "root",
+      "0": "parent",
+      "6": "parent",
+      "7": "parent",
+      "1": "child",
+      "2": "child",
+      "3": "child",
+      "4": "child",
+      "8": "child",
+      "9": "child"
+    }
+  },
+  "link_properties": {
+    "1->0": {
+      "sender": 1,
+      "receiver": 0,
+      "stddev_ms": 14.2885,
+      "stddev_class": "C",
+      "loss_rate": 0.000513,
+      "base_delay_ms": 70.31,
+      "delay_jitter_ms": 14.06
+    },
+    "2->0": {
+      "sender": 2,
+      "receiver": 0,
+      "stddev_ms": 7.7071,
+      "stddev_class": "B",
+      "loss_rate": 0.0014,
+      "base_delay_ms": 124.3,
+      "delay_jitter_ms": 24.86
+    },
+    "3->0": {
+      "sender": 3,
+      "receiver": 0,
+      "stddev_ms": 4.909,
+      "stddev_class": "B",
+      "loss_rate": 0.001177,
+      "base_delay_ms": 14.25,
+      "delay_jitter_ms": 2.85
+    },
+    "4->0": {
+      "sender": 4,
+      "receiver": 0,
+      "stddev_ms": 21.685,
+      "stddev_class": "D",
+      "loss_rate": 0.001749,
+      "base_delay_ms": 56.41,
+      "delay_jitter_ms": 11.28
+    },
+    "8->0": {
+      "sender": 8,
+      "receiver": 0,
+      "stddev_ms": 53.5799,
+      "stddev_class": "E",
+      "loss_rate": 0.001819,
+      "base_delay_ms": 33.22,
+      "delay_jitter_ms": 6.64
+    },
+    "9->0": {
+      "sender": 9,
+      "receiver": 0,
+      "stddev_ms": 4.1752,
+      "stddev_class": "B",
+      "loss_rate": 0.00054,
+      "base_delay_ms": 104.04,
+      "delay_jitter_ms": 20.81
+    },
+    "1->6": {
+      "sender": 1,
+      "receiver": 6,
+      "stddev_ms": 15.7401,
+      "stddev_class": "C",
+      "loss_rate": 0.000754,
+      "base_delay_ms": 58.72,
+      "delay_jitter_ms": 11.74
+    },
+    "2->6": {
+      "sender": 2,
+      "receiver": 6,
+      "stddev_ms": 4.7579,
+      "stddev_class": "B",
+      "loss_rate": 0.000515,
+      "base_delay_ms": 73.98,
+      "delay_jitter_ms": 14.8
+    },
+    "3->6": {
+      "sender": 3,
+      "receiver": 6,
+      "stddev_ms": 3.1085,
+      "stddev_class": "A",
+      "loss_rate": 0.000936,
+      "base_delay_ms": 125.74,
+      "delay_jitter_ms": 25.15
+    },
+    "4->6": {
+      "sender": 4,
+      "receiver": 6,
+      "stddev_ms": 10.4989,
+      "stddev_class": "C",
+      "loss_rate": 0.00202,
+      "base_delay_ms": 121.69,
+      "delay_jitter_ms": 24.34
+    },
+    "8->6": {
+      "sender": 8,
+      "receiver": 6,
+      "stddev_ms": 5.1533,
+      "stddev_class": "B",
+      "loss_rate": 0.00151,
+      "base_delay_ms": 25.26,
+      "delay_jitter_ms": 5.05
+    },
+    "9->6": {
+      "sender": 9,
+      "receiver": 6,
+      "stddev_ms": 1.3199,
+      "stddev_class": "A",
+      "loss_rate": 0.00185,
+      "base_delay_ms": 101.4,
+      "delay_jitter_ms": 20.28
+    },
+    "1->7": {
+      "sender": 1,
+      "receiver": 7,
+      "stddev_ms": 14.2458,
+      "stddev_class": "C",
+      "loss_rate": 0.000977,
+      "base_delay_ms": 87.47,
+      "delay_jitter_ms": 17.49
+    },
+    "2->7": {
+      "sender": 2,
+      "receiver": 7,
+      "stddev_ms": 1.6092,
+      "stddev_class": "A",
+      "loss_rate": 0.001469,
+      "base_delay_ms": 73.31,
+      "delay_jitter_ms": 14.66
+    },
+    "3->7": {
+      "sender": 3,
+      "receiver": 7,
+      "stddev_ms": 14.12,
+      "stddev_class": "C",
+      "loss_rate": 0.001375,
+      "base_delay_ms": 85.27,
+      "delay_jitter_ms": 17.05
+    },
+    "4->7": {
+      "sender": 4,
+      "receiver": 7,
+      "stddev_ms": 10.4316,
+      "stddev_class": "C",
+      "loss_rate": 0.000425,
+      "base_delay_ms": 68.32,
+      "delay_jitter_ms": 13.66
+    },
+    "8->7": {
+      "sender": 8,
+      "receiver": 7,
+      "stddev_ms": 2.403,
+      "stddev_class": "A",
+      "loss_rate": 0.002105,
+      "base_delay_ms": 38.92,
+      "delay_jitter_ms": 7.78
+    },
+    "9->7": {
+      "sender": 9,
+      "receiver": 7,
+      "stddev_ms": 2.0597,
+      "stddev_class": "A",
+      "loss_rate": 0.000708,
+      "base_delay_ms": 100.98,
+      "delay_jitter_ms": 20.2
+    },
+    "0->5": {
+      "sender": 0,
+      "receiver": 5,
+      "stddev_ms": 14.2712,
+      "stddev_class": "C",
+      "loss_rate": 0.001457,
+      "base_delay_ms": 63.93,
+      "delay_jitter_ms": 12.79
+    },
+    "6->5": {
+      "sender": 6,
+      "receiver": 5,
+      "stddev_ms": 17.5028,
+      "stddev_class": "D",
+      "loss_rate": 0.000418,
+      "base_delay_ms": 18.06,
+      "delay_jitter_ms": 3.61
+    },
+    "7->5": {
+      "sender": 7,
+      "receiver": 5,
+      "stddev_ms": 11.695,
+      "stddev_class": "C",
+      "loss_rate": 0.000547,
+      "base_delay_ms": 77.65,
+      "delay_jitter_ms": 15.53
+    }
+  },
+  "fault_schedule": [
+    {
+      "type": "crash",
+      "node_id": 4,
+      "start_time_ms": 172800000,
+      "end_time_ms": null,
+      "affected_links": "all",
+      "description": "Node 4 permanently crashes at hour 48"
+    },
+    {
+      "type": "crash_recovery",
+      "node_id": 9,
+      "start_time_ms": 72000000,
+      "end_time_ms": 73800000,
+      "affected_links": "all",
+      "description": "Node 9 crashes at hour 20, recovers at hour 20.5"
+    },
+    {
+      "type": "crash_recovery",
+      "node_id": 8,
+      "start_time_ms": 198000000,
+      "end_time_ms": 198298800,
+      "affected_links": "all",
+      "description": "Node 8 crashes at hour 55, recovers after 5 minutes"
+    },
+    {
+      "type": "timing",
+      "node_id": 2,
+      "start_time_ms": 36000000,
+      "end_time_ms": 43200000,
+      "affected_links": [
+        [
+          2,
+          0
+        ]
+      ],
+      "extra_delay_ms": 150,
+      "description": "Node 2 delayed heartbeats to parent 0 during hours 10-12"
+    },
+    {
+      "type": "timing",
+      "node_id": 1,
+      "start_time_ms": 126000000,
+      "end_time_ms": 129600000,
+      "affected_links": [
+        [
+          1,
+          0
+        ]
+      ],
+      "extra_delay_ms": 200,
+      "description": "Node 1 delayed heartbeats to parent 0 during hours 35-36"
+    },
+    {
+      "type": "omission",
+      "node_id": 3,
+      "start_time_ms": 54000000,
+      "end_time_ms": 64800000,
+      "affected_links": [
+        [
+          3,
+          0
+        ]
+      ],
+      "drop_rate": 0.15,
+      "description": "Node 3 drops 15% heartbeats to parent 0 during hours 15-18"
+    }
+  ]
+}
